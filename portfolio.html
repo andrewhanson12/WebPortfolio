@@ -1,61 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link rel="icon" href="images/favicon-16x16.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body class="container-fluid">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-primary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Home</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="resume.html">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="coursework.html">Coursework</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Me</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main>
-        <h1 class="text-center">My Portfolio</h1>
-        <div class="container text-center">
-            <div class="row">
-              <div class="col">
-                <a href=" https://andrewhanson12.github.io/rss-midterm/"><img src="images/Screenshot 2025-03-12 170951.png" alt="RSS Project" class="img-fluid"></a>
-                <p>Here is an RSS Feed project that I did in Web Development Technologies. I used Bootstrap, HTML, CSS, and JavaScript.</p>
-                <a href="https://github.com/andrewhanson12/rss-midterm.git" class="btn btn-primary">Source Code</a>
-              </div>
-              <div class="col">
-                <a href="https://andrewhanson12.github.io/HTML-interview-questions/"><img src="images/Screenshot 2025-04-03 183902.png" alt="HTML Interview Project" class="img-fluid"></a>
-                <p>This is a project I did in Web Development Technologies where I used HTML and JavaScript to make a review page with some questions and answers about HTML.</p>
-                <a href="https://github.com/andrewhanson12/HTML-interview-questions" class="btn btn-primary">Source Code</a>
-              </div>
-              <div class="col">
-                <a href="https://andrewhanson12.github.io/AWD1000-final-project/"><img src="images/Screenshot 2025-04-27 181129.png" alt="CRUD app" class="img-fluid"></a>
-                <p>Here is a React CRUD application from Web Development Technologies, I created this app using React, Javascript XML, and HTML.</p>
-                <a href="https://github.com/andrewhanson12/AWD1000-final-project.git" class="btn btn-primary">Source Code</a>
-              </div>
-            </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrew Hanson | Portfolio</title>
+  <link rel="icon" href="images/favicon-16x16.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Andrew Hanson</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="coursework.html">Coursework</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Portfolio</h1>
+      <p class="lead mb-0">Projects I have worked on while learning development</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <a href="https://andrewhanson12.github.io/rss-midterm/index.html"><img src="images/Screenshot 2026-04-26 131917.png"
+              class="card-img-top project-img" alt="Web design project"></a>
+
+          <div class="card-body">
+            <h5 class="card-title">RSS Feed</h5>
+            <p class="card-text">
+              A website that displays news articles from an RSS feed, built to practice front-end development.
+            </p>
+            <p>
+              <strong>Skills Used:</strong>
+              HTML, CSS, Bootstrap, Git
+            </p>
           </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <a href="https://issue-tracker-820843128890.us-central1.run.app/login">
+            <img src="images/Screenshot 2026-04-26 123301.png" class="card-img-top project-img"
+              alt="Full stack project">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Full-Stack Web Application</h5>
+            <p class="card-text">
+              A full-stack issue tracker with a front-end interface, API routes, user data, and database connections.
+            </p>
+            <p>
+              <strong>Skills Used:</strong>
+              TypeScript, React, Node.js, Express, MongoDB, Google Cloud
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <a href="https://github.com/andrewhanson12/MVC-app"><img src="images/Screenshot 2026-04-26 131404.png"
+              class="card-img-top project-img" alt="C sharp project"></a>
+          <div class="card-body">
+            <h5 class="card-title">C# Application</h5>
+            <p class="card-text">
+              A C# project created to practice programming concepts, data handling, and application logic.
+            </p>
+            <p>
+              <strong>Skills Used:</strong>
+              C#, .NET, SQL, Git, Azure
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 Andrew Hanson | Web Portfolio</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

@@ -1,99 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume</title>
-    <link rel="icon" href="images/favicon-16x16.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body class="container-fluid">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-primary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Home</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="resume.html">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="coursework.html">Coursework</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Me</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main>
-        <h1 class="text-center">My Resume</h1>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item bg-danger">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  <strong>Technical Skills</strong>
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    <strong>Programming Languages:</strong> JavaScript <br>
-                    <strong>Web Development:</strong> HTML5, CSS3, Bootstrap, React, Node <br>
-                    <strong>Development Tools:</strong> Visual Studio Code, Visual Studio <br>
-                    <strong>Version Control:</strong> Git, Github <br>
-                    </div>
-              </div>
-            </div>
-            <div class="accordion-item bg-success">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  <strong>Software Development Projects</strong>
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><a href="https://andrewhanson12.github.io/rss-midterm/"><strong>RSS News Feed:</strong></a> Developed a website using HTML, CSS, Bootstrap, and JavaScript to show a collection of RSS news feeds on topics I found interesting. <br>
-                  <a href="https://andrewhanson12.github.io/HTML-interview-questions/"><strong>HTML Interview Questions:</strong></a> An application with questions and answers about HTML using HTML, Bootstrap and JavaScript. <br>
-                  <a href="https://github.com/andrewhanson12/AWD1000-final-project/deployments/github-pages"><strong>React CRUD App</strong></a> My final project in AWD1000 showcasing a CRUD app. I used React, Javascript XML, HTML and Bootstrap on this project.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item bg-secondary">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  <strong>Education</strong>
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    <strong>Associate of Application and Web Development| Ranken Technical College| Expected Graduation: May 2026</strong><br>
-                    <strong>Web Development Technologies (14 Credit Hours):</strong> Comprehensive web-based course covering modern web development. Hands on experience with HTML, CSS, JavaScript, React and Node.
-                    </div>
-              </div>
-            </div>
-            <div class="accordion-item bg-success-subtle">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed bg-danger-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    <strong>Work Experience</strong>
-                  </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                   <strong>Warehouse | Rapid Response | Jan 2022-Dec 2023:</strong> Load and unload any deliveries the warehouse receives, load them on to the correct delivery truck, enter returns and other data into excel. <br>
-                    <strong>League Coordinator | Frankie Martin’s | Dec 2023-Present:</strong> Post signups for leagues on our website, coordinate with referees to schedule, respond to consumers through outlook and make sure all leagues run smoothly.
-                    </div>
-                </div>
-              </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrew Hanson | Resume</title>
+  <link rel="icon" href="images/favicon-16x16.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Andrew Hanson</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="coursework.html">Coursework</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Resume</h1>
+      <p class="lead mb-0">Education, skills, and experience</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <div class="row g-4">
+      <section class="col-lg-8">
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h2>Education</h2>
+            <h5>Ranken Technical College</h5>
+            <p class="mb-1">Application and Web Development</p>
+            <p class="text-muted mb-0">Studying web design, programming, databases, and application development.</p>
           </div>
-          <div class="text-center"><a href="MyResume.pdf" class="btn btn-primary">Full Resume</a></div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+        </div>
+
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h2>Experience</h2>
+            <h5>Student Developer</h5>
+            <p>
+              Built projects using front-end and back-end technologies.
+              Worked with responsive web pages, databases, APIs, and cloud deployment.
+            </p>
+
+            <h5>Relevant Project Experience</h5>
+            <ul>
+              <li>Created responsive websites using HTML, CSS, Bootstrap, and JavaScript.</li>
+              <li>Built full-stack applications using React, Node.js, Express, and MongoDB.</li>
+              <li>Developed C# and .NET applications using SQL databases.</li>
+              <li>Used Git for version control and project tracking.</li>
+              <li>Deployed projects using Azure and Google Cloud.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <aside class="col-lg-4">
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h2>Technical Skills</h2>
+            <span class="badge text-bg-primary m-1">HTML</span>
+            <span class="badge text-bg-primary m-1">CSS</span>
+            <span class="badge text-bg-primary m-1">JavaScript</span>
+            <span class="badge text-bg-primary m-1">TypeScript</span>
+            <span class="badge text-bg-primary m-1">React</span>
+            <span class="badge text-bg-primary m-1">Node.js</span>
+            <span class="badge text-bg-primary m-1">Express</span>
+            <span class="badge text-bg-primary m-1">MongoDB</span>
+            <span class="badge text-bg-primary m-1">C#</span>
+            <span class="badge text-bg-primary m-1">.NET</span>
+            <span class="badge text-bg-primary m-1">SQL</span>
+            <span class="badge text-bg-primary m-1">Git</span>
+            <span class="badge text-bg-primary m-1">Azure</span>
+            <span class="badge text-bg-primary m-1">Google Cloud</span>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2>Strengths</h2>
+            <ul class="mb-0">
+              <li>Problem solving</li>
+              <li>Attention to detail</li>
+              <li>Willingness to learn</li>
+              <li>Team communication</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 Andrew Hanson | Web Portfolio</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
