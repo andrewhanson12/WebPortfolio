@@ -2,23 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andrew Hanson | Portfolio</title>
   <link rel="icon" href="images/favicon-16x16.png">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
 
-<body class="bg-light">
-
+<body>
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">Andrew Hanson</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -34,63 +36,103 @@
   <header class="bg-primary text-white text-center py-5">
     <div class="container">
       <h1 class="display-5 fw-bold">Portfolio</h1>
-      <p class="lead mb-0">Projects I have worked on while learning development</p>
+      <p class="lead mb-0">Projects that show my full-stack, front-end, and C# development experience.</p>
     </div>
   </header>
 
-  <main class="container my-5">
+  <main class="container py-5">
     <div class="row g-4">
 
       <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <a href="https://andrewhanson12.github.io/rss-midterm/index.html"><img src="images/Screenshot 2026-04-26 131917.png"
-              class="card-img-top project-img" alt="Web design project"></a>
-
-          <div class="card-body">
-            <h5 class="card-title">RSS Feed</h5>
-            <p class="card-text">
-              A website that displays news articles from an RSS feed, built to practice front-end development.
-            </p>
-            <p>
-              <strong>Skills Used:</strong>
-              HTML, CSS, Bootstrap, Git
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <a href="https://issue-tracker-820843128890.us-central1.run.app/login">
+        <div class="card shadow-sm h-100">
+          <a href="https://issue-tracker-820843128890.us-central1.run.app/login" target="_blank">
             <img src="images/Screenshot 2026-04-26 123301.png" class="card-img-top project-img"
-              alt="Full stack project">
+              alt="Full-stack issue tracker screenshot">
           </a>
-          <div class="card-body">
-            <h5 class="card-title">Full-Stack Web Application</h5>
+
+          <div class="card-body d-flex flex-column">
+            <h2 class="h5 card-title">Full-Stack Issue Tracker</h2>
             <p class="card-text">
-              A full-stack issue tracker with a front-end interface, API routes, user data, and database connections.
+              A full-stack web application with authentication, user management, bug tracking,
+              database operations, and cloud deployment.
             </p>
+
+            <p class="mb-2"><strong>Skills Used:</strong></p>
             <p>
-              <strong>Skills Used:</strong>
-              TypeScript, React, Node.js, Express, MongoDB, Google Cloud
+              <span class="badge text-bg-primary m-1">React</span>
+              <span class="badge text-bg-primary m-1">TypeScript</span>
+              <span class="badge text-bg-primary m-1">Node.js</span>
+              <span class="badge text-bg-primary m-1">Express</span>
+              <span class="badge text-bg-primary m-1">MongoDB</span>
+              <span class="badge text-bg-primary m-1">Google Cloud</span>
             </p>
+
+            <a href="https://issue-tracker-820843128890.us-central1.run.app/login" target="_blank"
+              class="btn btn-primary mt-auto">
+              View Project
+            </a>
           </div>
         </div>
       </div>
 
+
       <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <a href="https://github.com/andrewhanson12/MVC-app"><img src="images/Screenshot 2026-04-26 131404.png"
-              class="card-img-top project-img" alt="C sharp project"></a>
-          <div class="card-body">
-            <h5 class="card-title">C# Application</h5>
+        <div class="card shadow-sm h-100">
+          <a href="https://github.com/andrewhanson12/MVC-app" target="_blank">
+            <img src="images/Screenshot 2026-04-26 131404.png" class="card-img-top project-img"
+              alt="ASP.NET MVC application screenshot">
+          </a>
+
+          <div class="card-body d-flex flex-column">
+            <h2 class="h5 card-title">ASP.NET MVC Application</h2>
             <p class="card-text">
-              A C# project created to practice programming concepts, data handling, and application logic.
+              A C# web application built with ASP.NET MVC concepts, including controllers, models,
+              views, database work, and application logic.
             </p>
+
+            <p class="mb-2"><strong>Skills Used:</strong></p>
             <p>
-              <strong>Skills Used:</strong>
-              C#, .NET, SQL, Git, Azure
+              <span class="badge text-bg-primary m-1">C#</span>
+              <span class="badge text-bg-primary m-1">ASP.NET MVC</span>
+              <span class="badge text-bg-primary m-1">SQL</span>
+              <span class="badge text-bg-primary m-1">Visual Studio</span>
+              <span class="badge text-bg-primary m-1">Azure</span>
             </p>
+
+            <a href="https://github.com/andrewhanson12/MVC-app" target="_blank" class="btn btn-primary mt-auto">
+              View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+            <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <a href="https://andrewhanson12.github.io/rss-midterm/" target="_blank">
+            <img src="images/Screenshot 2026-04-26 131917.png" class="card-img-top project-img"
+              alt="RSS Feed project screenshot">
+          </a>
+
+          <div class="card-body d-flex flex-column">
+            <h2 class="h5 card-title">RSS Feed Website</h2>
+            <p class="card-text">
+              A responsive front-end website that displays curated RSS feed content in a clean,
+              organized layout.
+            </p>
+
+            <p class="mb-2"><strong>Skills Used:</strong></p>
+            <p>
+              <span class="badge text-bg-primary m-1">HTML</span>
+              <span class="badge text-bg-primary m-1">CSS</span>
+              <span class="badge text-bg-primary m-1">Bootstrap</span>
+              <span class="badge text-bg-primary m-1">JavaScript</span>
+              <span class="badge text-bg-primary m-1">Git</span>
+            </p>
+
+            <a href="https://andrewhanson12.github.io/rss-midterm/" target="_blank"
+              class="btn btn-primary mt-auto">
+              View Project
+            </a>
           </div>
         </div>
       </div>
